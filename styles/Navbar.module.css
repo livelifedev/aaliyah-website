@@ -1,0 +1,17 @@
+.nav {
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  list-style: none;
+  font-weight: bold;
+}
+
+.navLinks a {
+  display: block;
+  padding: 24px;
+}
