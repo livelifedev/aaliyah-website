@@ -6,6 +6,7 @@
   background: url(/images/aaliyah.jpg);
   background-repeat: no-repeat;
   background-position: center 65%;
+  border-radius: var(--border-radius);
 }
 
 .heroCopy {

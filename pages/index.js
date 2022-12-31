@@ -28,8 +28,17 @@ export default function Home() {
 
       <div className={styles.marketCopy}>
         <p>
-          &ldquo;Align with your true potential, <br />
-          be empowered to create a life full of abundance&rdquo;
+          <span style={{ marginRight: "4px" }}>&ldquo;</span>Align with your
+          true potential, <br />
+          be empowered to create a life full of abundance
+          <span style={{ marginLeft: "4px" }}>&rdquo;</span>
+        </p>
+      </div>
+
+      <div className={styles.missionCopy}>
+        <p>
+          My mission is to align people with their true potential and empower
+          them to create a life full of abundance.
         </p>
       </div>
     </>
