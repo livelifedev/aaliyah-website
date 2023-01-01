@@ -2,3 +2,7 @@
   /* max-width: var(--max-width); */
   margin: 0 auto;
 }
+
+.main {
+  margin-bottom: var(--spacing-y);
+}

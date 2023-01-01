@@ -5,7 +5,7 @@ function Layout({ children }) {
   return (
     <div className={styles.layout}>
       <Navbar />
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       <Navbar />
     </div>
   );

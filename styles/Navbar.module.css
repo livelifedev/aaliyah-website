@@ -1,12 +1,11 @@
 .nav {
-  height: var(--nav-height);
 }
 
 .navLinks {
+  height: var(--nav-height);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   text-transform: uppercase;
   list-style: none;
   font-weight: bold;
@@ -14,5 +13,6 @@
 
 .navLinks a {
   display: block;
-  padding: var(--spacing-y);
+  padding: 0 var(--spacing-y);
+  font-size: 1.2rem;
 }
