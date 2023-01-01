@@ -1,16 +1,15 @@
 .hero {
-  display: flex;
-  justify-content: flex-end;
-  height: 500px;
-  padding: 32px 8%;
-  background: url(/images/aaliyah.jpg);
-  background-repeat: no-repeat;
-  background-position: center 65%;
-  border-radius: var(--border-radius);
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
 }
 
 .heroCopy {
-  display: inline-block;
+  position: absolute;
+  top: 20%;
+  right: 20%;
   text-align: center;
 }
 
@@ -28,5 +27,26 @@
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
-  padding: 24px 4px;
+  padding: var(--copy-gutter);
+}
+
+.missionWrapper {
+  padding: var(--copy-gutter);
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+.missionLeadCopy {
+  font-size: 1.5rem;
+}
+
+.missionSecondaryCopy {
+  font-size: 1.2rem;
+}
+
+.missionLinkWrapper {
+  margin-top: var(--spacing-y);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }

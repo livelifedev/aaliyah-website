@@ -1,5 +1,8 @@
 :root {
+  --spacing-y: 24px;
+  --copy-gutter: var(--spacing-y) 12%;
   --max-width: 859px;
+  --nav-height: 70px;
   --border-radius: 4px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
@@ -7,6 +10,7 @@
 
   --text-color: #000000;
   --background-color: #ffffff;
+  --secondary-color: #eaeef7;
 }
 
 * {
@@ -17,8 +21,7 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  /* max-width: 100vw; */
 }
 
 body {

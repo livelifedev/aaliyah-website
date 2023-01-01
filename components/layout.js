@@ -6,6 +6,7 @@ function Layout({ children }) {
     <div className={styles.layout}>
       <Navbar />
       <main>{children}</main>
+      <Navbar />
     </div>
   );
 }

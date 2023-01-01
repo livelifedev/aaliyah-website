@@ -19,6 +19,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.hero}>
+        <img src="/images/aaliyah-bg.jpg" alt="" />
         <div className={styles.heroCopy}>
           <h1>Aaliyah Rubio</h1>
           <p>Holistic Therapy</p>
@@ -35,10 +36,22 @@ export default function Home() {
         </p>
       </div>
 
-      <div className={styles.missionCopy}>
-        <p>
+      <div className={styles.missionWrapper}>
+        <p className={styles.missionLeadCopy}>
           My mission is to align people with their true potential and empower
           them to create a life full of abundance.
+        </p>
+        <p className={styles.missionSecondaryCopy}>
+          I take people on a journey inward awakening and bringing to awareness
+          any self-limiting beliefs, fears, or past traumas that exist in the
+          subconscious and deep within the unconscious mind. I teach people to
+          accept and detach from these beliefs, fears and traumas allowing them
+          to be free of personal limitations and have the ability to stop
+          recreating the same outcomes in life.
+        </p>
+
+        <p className={styles.missionLinkWrapper}>
+          <a>Get to know me</a>
         </p>
       </div>
     </>

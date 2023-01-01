@@ -1,4 +1,5 @@
 .nav {
+  height: var(--nav-height);
 }
 
 .navLinks {
@@ -13,5 +14,5 @@
 
 .navLinks a {
   display: block;
-  padding: 24px;
+  padding: var(--spacing-y);
 }
