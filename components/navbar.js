@@ -1,23 +1,34 @@
+import Link from "next/link";
+import { slide as Menu } from "react-burger-menu";
 import styles from "../styles/Navbar.module.css";
+// import menuStyles from "../styles/Menu.module.css";
 
 function Navbar() {
   return (
-    <nav className={styles.nav}>
-      <ul className={styles.navLinks}>
-        <li>
-          <a>Home</a>
-        </li>
-        <li>
-          <a>About Me</a>
-        </li>
-        <li>
-          <a>Services</a>
-        </li>
-        <li>
-          <a>Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <nav className={styles.nav}>
+        <Link href="/">Home</Link>
+        <Link href="/">About Me</Link>
+        <Link href="/">Services</Link>
+        <Link href="/">Contact</Link>
+      </nav>
+      <div className={styles.mobileNav}>
+        <Menu right>
+          <Link className="menu-item" href="/">
+            Home
+          </Link>
+          <Link className="menu-item" href="/">
+            About Me
+          </Link>
+          <Link className="menu-item" href="/">
+            Service
+          </Link>
+          <Link className="menu-item" href="/">
+            Contact
+          </Link>
+        </Menu>
+      </div>
+    </>
   );
 }
 

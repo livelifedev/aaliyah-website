@@ -49,5 +49,6 @@
   margin-top: var(--spacing-y);
   margin-bottom: var(--spacing-y);
   font-size: 2rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
