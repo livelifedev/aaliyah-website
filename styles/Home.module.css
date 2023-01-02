@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  overflow: hidden;
 }
 
 .hero img {
@@ -9,46 +10,145 @@
 .heroCopy {
   position: absolute;
   top: 20%;
-  right: 20%;
+  right: 0;
+  left: 0;
   text-align: center;
 }
 
 .heroCopy h1 {
-  font-size: 6rem;
-  margin-bottom: 16px;
+  font-size: 2.8rem;
+  margin-bottom: 4px;
 }
 
 .heroCopy p {
-  font-size: 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
 .marketCopy {
-  font-size: 2.5rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
-  padding: var(--copy-gutter);
+  padding: 32px 24px;
 }
 
 .missionWrapper {
-  padding: var(--copy-gutter);
+  padding: 32px 24px;
   background-color: var(--secondary-color);
   text-align: center;
 }
 
 .missionLeadCopy {
-  font-size: 2.5rem;
+  font-size: 1.4rem;
   margin-bottom: 8px;
 }
 
 .missionSecondaryCopy {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .missionLinkWrapper {
-  margin-top: var(--spacing-y);
-  margin-bottom: var(--spacing-y);
-  font-size: 2rem;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 600px) {
+  .heroCopy {
+    right: 20%;
+    left: unset;
+  }
+
+  .heroCopy h1 {
+    font-size: 4rem;
+  }
+
+  .heroCopy p {
+    font-size: 1.3rem;
+  }
+
+  .marketCopy {
+    font-size: 1.8rem;
+    padding: var(--copy-gutter);
+  }
+
+  .missionWrapper {
+    padding: var(--copy-gutter);
+  }
+
+  .missionLeadCopy {
+    font-size: 1.8rem;
+  }
+
+  .missionSecondaryCopy {
+    font-size: 1.2rem;
+  }
+
+  .missionLinkWrapper {
+    margin-top: var(--spacing-y);
+    margin-bottom: var(--spacing-y);
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .heroCopy {
+    right: 20%;
+  }
+
+  .heroCopy h1 {
+    font-size: 5rem;
+  }
+
+  .heroCopy p {
+    font-size: 1.6rem;
+  }
+
+  .marketCopy {
+    font-size: 2.2rem;
+  }
+
+  .missionLeadCopy {
+    font-size: 2.2rem;
+  }
+
+  .missionSecondaryCopy {
+    font-size: 1.4rem;
+  }
+
+  .missionLinkWrapper {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .heroCopy {
+    right: 20%;
+  }
+
+  .heroCopy h1 {
+    font-size: 6rem;
+  }
+
+  .heroCopy p {
+    font-size: 2rem;
+  }
+
+  .marketCopy {
+    font-size: 2.5rem;
+  }
+
+  .missionLeadCopy {
+    font-size: 2.5rem;
+  }
+
+  .missionSecondaryCopy {
+    font-size: 1.5rem;
+  }
+
+  .missionLinkWrapper {
+    font-size: 2rem;
+  }
 }
