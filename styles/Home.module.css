@@ -20,12 +20,10 @@
 
 .heroCopy p {
   font-size: 2rem;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
 .marketCopy {
-  font-weight: bold;
   font-size: 2.5rem;
   text-transform: uppercase;
   text-align: center;
@@ -51,6 +49,5 @@
   margin-top: var(--spacing-y);
   margin-bottom: var(--spacing-y);
   font-size: 2rem;
-  font-weight: bold;
   text-transform: uppercase;
 }
