@@ -1,0 +1,56 @@
+.wrapper {
+  padding: var(--copy-gutter);
+  padding-top: 24px;
+}
+
+.wrapper p {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.wrapper h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.wrapper section {
+}
+
+.section {
+  height: 400px;
+  background-color: var(--secondary-color);
+  padding: var(--copy-gutter);
+  padding-top: 90px;
+  margin-bottom: var(--spacing-y);
+}
+
+.section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* max-width: 300px; */
+  font-size: 1.5rem;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.title {
+  margin-bottom: -80px;
+}
+
+.title h2 {
+  font-size: 4rem;
+}
+
+.title p {
+  padding-left: 20%;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.section p {
+  font-size: 1.5rem;
+  text-transform: none;
+}

@@ -9,7 +9,7 @@ function Navbar() {
       <nav className={styles.nav}>
         <Link href="/">Home</Link>
         <Link href="/">About Me</Link>
-        <Link href="/">Services</Link>
+        <Link href="/services">Services</Link>
         <Link href="/">Contact</Link>
       </nav>
       <div className={styles.mobileNav}>
@@ -20,8 +20,8 @@ function Navbar() {
           <Link className="menu-item" href="/">
             About Me
           </Link>
-          <Link className="menu-item" href="/">
-            Service
+          <Link className="menu-item" href="/services">
+            Services
           </Link>
           <Link className="menu-item" href="/">
             Contact
