@@ -4,16 +4,13 @@
 }
 
 .wrapper p {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
 .wrapper h3 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-}
-
-.wrapper section {
 }
 
 .section {
@@ -29,21 +26,21 @@
   justify-content: space-between;
   align-items: flex-end;
   /* max-width: 300px; */
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 8px;
   margin-bottom: 32px;
 }
 
 .title {
-  margin-bottom: -80px;
+  margin-bottom: -40px;
 }
 
 .title h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .title p {
-  padding-left: 20%;
+  padding-left: 4%;
 }
 
 .price {
@@ -51,6 +48,45 @@
 }
 
 .section p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: none;
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+  }
+
+  .wrapper p {
+    font-size: 2.5rem;
+  }
+
+  .wrapper h3 {
+    font-size: 2rem;
+  }
+
+  .section {
+  }
+
+  .section li {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    margin-bottom: -80px;
+  }
+
+  .title h2 {
+    font-size: 4rem;
+  }
+
+  .title p {
+    padding-left: 10%;
+  }
+
+  .price {
+  }
+
+  .section p {
+    font-size: 1.5rem;
+  }
 }
