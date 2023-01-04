@@ -49,7 +49,7 @@ export default function Home() {
         </p>
 
         <p className={styles.missionLinkWrapper}>
-          <Link href="/">Get to know me</Link>
+          <Link href="/about">Get to know me</Link>
         </p>
       </div>
     </>
