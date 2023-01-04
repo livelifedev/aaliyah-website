@@ -51,6 +51,7 @@
 
 .mobileImageWrapper img {
   width: 100%;
+  max-width: 400px;
 }
 
 .qualifications {
@@ -78,6 +79,9 @@
   }
 
   .wrapper {
+    display: flex;
+    gap: 32px;
+    margin-bottom: var(--spacing-y);
   }
 
   .wrapper p {
@@ -85,12 +89,14 @@
   }
 
   .wrapper h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 32px;
   }
 
   .section {
     padding-top: 90px;
     margin-bottom: var(--spacing-y);
+    height: 100%;
   }
 
   .title {
@@ -111,5 +117,11 @@
 
   .secondSection img {
     display: block;
+    margin-bottom: 32px;
+  }
+
+  .qualifications li {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
   }
 }
