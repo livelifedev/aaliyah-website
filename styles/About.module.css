@@ -52,6 +52,7 @@
 .mobileImageWrapper img {
   width: 100%;
   max-width: 400px;
+  aspect-ratio: 1000/1323;
 }
 
 .qualifications {
@@ -118,6 +119,7 @@
   .secondSection img {
     display: block;
     margin-bottom: 32px;
+    aspect-ratio: 1000/1323;
   }
 
   .qualifications li {
