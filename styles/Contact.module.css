@@ -1,0 +1,104 @@
+.wrapper {
+  padding: var(--copy-gutter);
+  padding-top: 24px;
+}
+
+.wrapper p {
+  font-size: 1.2rem;
+}
+
+.wrapper h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.section {
+  background-color: var(--secondary-color);
+  padding: 32px 16px;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.title h2 {
+  font-size: 2.5rem;
+}
+
+.title p {
+  padding-left: 4%;
+}
+
+.section form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.section input {
+  border: none;
+  font-size: 1rem;
+  padding: 8px;
+}
+
+.section textarea {
+  border: none;
+  font-size: 1em;
+  padding: 8px;
+  font-family: sans-serif;
+}
+
+.section button {
+  border: none;
+  font-size: 1.4rem;
+  padding: 8px;
+  background: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper p {
+    font-size: 2.5rem;
+  }
+
+  .wrapper h3 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding-top: 90px;
+    margin-bottom: var(--spacing-y);
+  }
+
+  .title {
+    margin-bottom: var(--spacing-y);
+  }
+
+  .title h2 {
+    font-size: 4rem;
+  }
+
+  .title p {
+    padding-left: 10%;
+  }
+
+  .section input {
+    font-size: 1.4rem;
+    padding: 16px;
+  }
+
+  .section textarea {
+    font-size: 1.4em;
+    padding: 16px;
+  }
+
+  .section button {
+    font-size: 2rem;
+    padding: 16px;
+  }
+
+  .section {
+    padding: var(--copy-gutter);
+  }
+}
