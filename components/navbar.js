@@ -8,7 +8,7 @@ function Navbar() {
     <>
       <nav className={styles.nav}>
         <Link href="/">Home</Link>
-        <Link href="/">About Me</Link>
+        <Link href="/about">About Me</Link>
         <Link href="/services">Services</Link>
         <Link href="/">Contact</Link>
       </nav>
@@ -17,7 +17,7 @@ function Navbar() {
           <Link className="menu-item" href="/">
             Home
           </Link>
-          <Link className="menu-item" href="/">
+          <Link className="menu-item" href="/about">
             About Me
           </Link>
           <Link className="menu-item" href="/services">
