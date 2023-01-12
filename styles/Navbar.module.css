@@ -15,6 +15,7 @@
 }
 
 .mobileNav {
+  font-family: var(--secondary-font);
   display: block;
   height: var(--nav-height);
 }
