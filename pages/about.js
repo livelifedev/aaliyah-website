@@ -96,6 +96,7 @@ export default function About() {
               <li>Certificate in Holistic Human Development</li>
               <li>Certificate in Holistic Counselling</li>
               <li>Certificate in Holistic Life Coaching</li>
+              <li>RYT 200 - Registered Yoga Teacher Training 200hrs</li>
             </ul>
           </div>
         </section>

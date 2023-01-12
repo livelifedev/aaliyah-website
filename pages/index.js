@@ -27,10 +27,8 @@ export default function Home() {
 
       <div className={styles.marketCopy}>
         <p>
-          <span style={{ marginRight: "4px" }}>&ldquo;</span>Align with your
-          true potential, <br />
-          be empowered to create a life full of abundance
-          <span style={{ marginLeft: "4px" }}>&rdquo;</span>
+          &ldquo;Align with your true potential, <br />
+          be empowered to create a life full of abundance&rdquo;
         </p>
       </div>
 
