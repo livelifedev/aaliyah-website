@@ -76,6 +76,7 @@
 }
 
 .section .marketCaption {
+  margin-top: 32px;
   font-family: var(--secondary-font);
   text-transform: uppercase;
 }
