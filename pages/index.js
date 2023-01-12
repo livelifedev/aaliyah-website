@@ -10,7 +10,7 @@ export default function Home() {
         <title>Aaliyah Rubio</title>
         <meta
           name="description"
-          content="Aaliyah Rubio - Holistic therapy positive psychology coach"
+          content="Aaliyah Rubio - Holistic Therapy Transformative Coaching"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -21,7 +21,7 @@ export default function Home() {
         <div className={styles.heroCopy}>
           <h1>Aaliyah Rubio</h1>
           <p>Holistic Therapy</p>
-          <p>Positive Psychology Coach</p>
+          <p>Transformative Coaching</p>
         </div>
       </div>
 
