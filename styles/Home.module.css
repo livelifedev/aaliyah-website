@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 16/9;
+  aspect-ratio: 112/73;
 }
 
 .hero img {
@@ -10,7 +10,7 @@
 
 .heroCopy {
   position: absolute;
-  top: 20%;
+  top: 30%;
   right: 8%;
   text-align: center;
 }

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Services.module.css";
 
 export default function Services() {
@@ -121,6 +122,12 @@ export default function Services() {
             </ul>
           </div>
         </section>
+
+        <div>
+          <p className={styles.missionLinkWrapper}>
+            <Link href="/contact">Start your journey</Link>
+          </p>
+        </div>
       </div>
     </>
   );

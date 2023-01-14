@@ -8,7 +8,11 @@ function Navbar() {
   const router = useRouter();
   return (
     <>
-      <nav className={styles.nav}>
+      <nav
+        className={`${styles.nav} ${
+          router.pathname === "/" ? styles.navHome : ""
+        }`}
+      >
         <Link href="/">Home</Link>
         <Link href="/about">About Me</Link>
         <Link href="/services">Services</Link>

@@ -119,3 +119,32 @@
     font-size: 1.5rem;
   }
 }
+
+.wrapper .missionLinkWrapper {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper .missionLinkWrapper {
+    margin-top: var(--spacing-y);
+    margin-bottom: var(--spacing-y);
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper .missionLinkWrapper {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper .missionLinkWrapper {
+    font-size: 2rem;
+  }
+}
