@@ -21,13 +21,33 @@
 }
 
 .section li {
+  font-size: 1.2rem;
+}
+
+.section ol li {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   /* max-width: 300px; */
-  font-size: 1.2rem;
   margin-top: 8px;
   margin-bottom: 32px;
+}
+
+.section ul {
+  margin-left: 3rem;
+  margin-top: 8px;
+}
+
+.blockSection h3 {
+  padding: var(--copy-gutter);
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: var(--secondary-font);
+}
+
+.blockSection .section {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .title {
@@ -52,6 +72,11 @@
   font-size: 1.2rem;
   text-transform: none;
   margin-top: 8px;
+}
+
+.sectionLead {
+  font-weight: bold;
+  font-style: italic;
 }
 
 @media only screen and (min-width: 900px) {
