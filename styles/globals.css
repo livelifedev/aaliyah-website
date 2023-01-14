@@ -52,6 +52,10 @@ h3 {
   visibility: hidden;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: absolute;

@@ -36,10 +36,12 @@
 
 .title h2 {
   font-size: 2.5rem;
+  font-family: var(--primary-font);
 }
 
 .title p {
   padding-left: 4%;
+  font-family: var(--secondary-font);
 }
 
 .price {

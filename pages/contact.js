@@ -18,7 +18,8 @@ export default function Contact() {
         <div>
           <div className={styles.title}>
             <h2>Let&apos;s Connect</h2>
-            <p>Have further questions?</p>
+            <p>Want to know more?</p>
+            <p>Send a message or</p>
             <p>Book a complimentary call</p>
           </div>
           <div className={styles.section}>

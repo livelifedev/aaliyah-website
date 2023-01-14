@@ -21,7 +21,9 @@ export default function Services() {
             <p>Become The Best You</p>
           </div>
           <div className={styles.section}>
-            <h3>Services</h3>
+            <p className="bold">
+              All services are one to one and currently online only
+            </p>
             <ul>
               <li>
                 <div>
@@ -35,7 +37,7 @@ export default function Services() {
                   <div>Subsequent Sessions</div>
                   <div>60 minutes</div>
                 </div>
-                <span className={styles.price}>$160</span>
+                <span className={styles.price}>$165</span>
               </li>
             </ul>
           </div>
