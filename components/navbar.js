@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { slide as Menu } from "react-burger-menu";
 import styles from "../styles/Navbar.module.css";
+import { useRouter } from "next/router";
 // import menuStyles from "../styles/Menu.module.css";
 
 function Navbar() {
+  const router = useRouter();
   return (
     <>
       <nav className={styles.nav}>
@@ -11,6 +13,9 @@ function Navbar() {
         <Link href="/about">About Me</Link>
         <Link href="/services">Services</Link>
         <Link href="/contact">Contact</Link>
+        <h1 className={router.pathname === "/" ? "hidden" : null}>
+          Aaliyah Rubio
+        </h1>
       </nav>
       <div className={styles.mobileNav}>
         <Menu right>
