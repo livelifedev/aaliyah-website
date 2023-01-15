@@ -50,6 +50,7 @@ h3 {
 
 .hidden {
   visibility: hidden;
+  /* display: none; */
 }
 
 .bold {

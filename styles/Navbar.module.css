@@ -27,13 +27,20 @@
   height: var(--nav-height);
 }
 
+/* .mobileNav h1 {
+  padding-top: 30px;
+  padding-left: 36px;
+  font-size: 1.2rem;
+  font-family: var(--primary-font);
+} */
+
 .navHome {
   position: absolute;
   z-index: 1;
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .nav {
     display: flex;
   }
