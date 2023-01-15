@@ -6,3 +6,9 @@
 .main {
   /* margin-bottom: var(--spacing-y); */
 }
+
+.footer {
+  padding: 10px 8px 8px;
+  font-family: var(--secondary-font);
+  text-align: center;
+}

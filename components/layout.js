@@ -7,6 +7,9 @@ function Layout({ children }) {
       <Navbar />
       <main className={styles.main}>{children}</main>
       {/* <Navbar /> */}
+      <footer className={styles.footer}>
+        <p>&copy; 2023 Aaliyah Rubio</p>
+      </footer>
     </div>
   );
 }
