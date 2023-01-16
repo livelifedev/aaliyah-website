@@ -26,7 +26,13 @@ function Navbar() {
           alt="Aaliyah Rubio"
         />
       </nav>
+
       <div className={styles.mobileNav}>
+        <img
+          className={styles.mobileLogo}
+          src="/images/aaliyah-logo.jpg"
+          alt="Aaliyah Rubio"
+        />
         <Menu right>
           <Link className="menu-item" href="/">
             Home

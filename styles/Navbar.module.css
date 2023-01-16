@@ -46,6 +46,13 @@
   margin-right: 4%;
   border-radius: var(--border-radius);
 }
+.mobileLogo {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  border-radius: var(--border-radius);
+  width: 145px;
+}
 
 @media only screen and (min-width: 800px) {
   .nav {
