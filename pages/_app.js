@@ -4,7 +4,7 @@ import "../styles/globals.css";
 import { Layout } from "../components/layout";
 
 const breathing = localFont({
-  src: "../fonts/breathing.ttf",
+  src: "../fonts/Breathing.ttf",
 });
 const hammersmithOne = Hammersmith_One({ weight: "400", subsets: ["latin"] });
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
