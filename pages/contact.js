@@ -27,6 +27,7 @@ export default function Contact() {
               action="mailto:aaliyah.r1990@gmail.com"
               method="post"
               enctype="text/plain"
+              autocomplete="off"
             >
               <input type="text" placeholder="ENTER FULL NAME" />
               <input type="email" placeholder="ENTER EMAIL" />
