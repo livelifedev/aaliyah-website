@@ -14,7 +14,7 @@
 }
 
 .section {
-  min-height: 400px;
+  /* min-height: 400px; */
   background-color: var(--secondary-color);
   padding: var(--copy-gutter);
   margin-bottom: 32px;
@@ -47,7 +47,7 @@
 
 .blockSection .section {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 56px;
 }
 
 .title {
@@ -97,7 +97,7 @@
   }
 
   .section li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .title {
@@ -116,7 +116,7 @@
   }
 
   .section p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
