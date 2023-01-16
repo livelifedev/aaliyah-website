@@ -33,7 +33,7 @@
 .section form {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 
 .section input {
@@ -44,7 +44,7 @@
 
 .section textarea {
   border: none;
-  font-size: 1em;
+  font-size: 1rem;
   padding: 8px;
   font-family: sans-serif;
 }
@@ -86,17 +86,17 @@
   }
 
   .section input {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     padding: 16px;
   }
 
   .section textarea {
-    font-size: 1.4em;
+    /* font-size: 1.4em; */
     padding: 16px;
   }
 
   .section button {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     padding: 16px;
   }
 
