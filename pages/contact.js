@@ -23,11 +23,15 @@ export default function Contact() {
             <p>Book a complimentary call</p>
           </div>
           <div className={styles.section}>
-            <form>
-              <input placeholder="ENTER FULL NAME" />
-              <input placeholder="ENTER EMAIL" />
-              <input placeholder="ENTER PHONE NUMBER" />
-              <input placeholder="PREFERRED CONTACT METHOD" />
+            <form
+              action="mailto:aaliyah.r1990@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <input type="text" placeholder="ENTER FULL NAME" />
+              <input type="email" placeholder="ENTER EMAIL" />
+              <input type="text" placeholder="ENTER PHONE NUMBER" />
+              <input type="text" placeholder="PREFERRED CONTACT METHOD" />
               <textarea rows="8" placeholder="MESSAGE" />
               <button type="submit">Submit</button>
             </form>
