@@ -104,7 +104,9 @@
   }
 
   .wrapper {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 3fr 2fr;
     gap: 32px;
     margin-bottom: var(--spacing-y);
   }
@@ -137,7 +139,7 @@
   }
 
   .section p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .secondSection img {
@@ -147,7 +149,7 @@
   }
 
   .qualifications li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 16px;
   }
 
