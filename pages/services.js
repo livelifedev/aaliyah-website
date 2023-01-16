@@ -67,13 +67,12 @@ export default function Services() {
               to be...
             </p>
             <p>
-              The transform program is the most powerful program I offer. During
-              this time, I will take you on a journey inward that will awaken
-              you and align you to your true potential. We will bring to surface
-              any past-traumas, fears, and self-limiting beliefs. We will then
-              clear these past beliefs and conditioning to heal any
-              emotional/physical wounds that prevent you from living your true
-              potential.
+              The transform program is powerful healing journey. During this
+              time, I will take you on a journey inward that will awaken you and
+              align you to your true potential. We will bring to surface any
+              past-traumas, fears, and self-limiting beliefs. We will then clear
+              these past beliefs and conditioning to heal any emotional/physical
+              wounds that prevent you from living your true potential.
             </p>
           </div>
         </section>
