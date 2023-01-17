@@ -67,7 +67,7 @@ export default function Services() {
               to be...
             </p>
             <p>
-              The transform program is powerful healing journey. During this
+              The transform program is a powerful healing journey. During this
               time, I will take you on a journey inward that will awaken you and
               align you to your true potential. We will bring to surface any
               past-traumas, fears, and self-limiting beliefs. We will then clear
