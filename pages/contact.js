@@ -37,26 +37,11 @@ export default function Contact() {
     });
   };
 
-  console.log({ SERVICE_ID: process.env.NEXT_PUBLIC_SERVICE_ID });
-
   const setStatus = (status) => dispatch({ type: "updateStatus", status });
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setStatus("PENDING");
-
-    // fetch("/api/email", {
-    //   method: "POST",
-    //   body: JSON.stringify(state),
-    // })
-    //   .then((res) => {
-    //     if (!res.ok) throw new Error(res.status);
-    //     setStatus("SUCCESS");
-    //   })
-    //   .catch((err) => {
-    //     console.error(err);
-    //     setStatus("ERROR");
-    //   });
 
     emailjs
       .send(
@@ -101,57 +86,61 @@ export default function Contact() {
 
           <div className={styles.section}>
             {state.status == "SUCCESS" && (
-              <>
+              <div className={styles.popup}>
                 <p>Message Sent!</p>
-              </>
+                <button onClick={() => setStatus("IDLE")}>Back</button>
+              </div>
             )}
             {state.status == "ERROR" && (
-              <>
+              <div className={styles.popup}>
                 <p>Something went wrong. Please try again.</p>
-              </>
+                <button onClick={() => setStatus("IDLE")}>Back</button>
+              </div>
             )}
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                placeholder="ENTER FULL NAME"
-                name="fullName"
-                required
-                value={state.fullName}
-                onChange={updateFieldValue("fullName")}
-              />
-              <input
-                type="text"
-                placeholder="ENTER EMAIL"
-                name="email"
-                required
-                value={state.email}
-                onChange={updateFieldValue("email")}
-              />
-              <input
-                type="text"
-                placeholder="ENTER PHONE NUMBER"
-                name="phone"
-                required
-                value={state.phone}
-                onChange={updateFieldValue("phone")}
-              />
-              <input
-                type="text"
-                placeholder="PREFERRED CONTACT METHOD"
-                name="contact"
-                value={state.contact}
-                onChange={updateFieldValue("contact")}
-              />
-              <textarea
-                rows="8"
-                placeholder="MESSAGE"
-                name="message"
-                required
-                value={state.message}
-                onChange={updateFieldValue("message")}
-              />
-              <button type="submit">Submit</button>
-            </form>
+            {state.status != "SUCCESS" && state.status != "ERROR" && (
+              <form onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  placeholder="ENTER FULL NAME"
+                  name="fullName"
+                  required
+                  value={state.fullName}
+                  onChange={updateFieldValue("fullName")}
+                />
+                <input
+                  type="text"
+                  placeholder="ENTER EMAIL"
+                  name="email"
+                  required
+                  value={state.email}
+                  onChange={updateFieldValue("email")}
+                />
+                <input
+                  type="text"
+                  placeholder="ENTER PHONE NUMBER"
+                  name="phone"
+                  required
+                  value={state.phone}
+                  onChange={updateFieldValue("phone")}
+                />
+                <input
+                  type="text"
+                  placeholder="PREFERRED CONTACT METHOD"
+                  name="contact"
+                  value={state.contact}
+                  onChange={updateFieldValue("contact")}
+                />
+                <textarea
+                  rows="8"
+                  placeholder="MESSAGE"
+                  name="message"
+                  required
+                  value={state.message}
+                  onChange={updateFieldValue("message")}
+                />
+                <button type="submit">Submit</button>
+              </form>
+            )}
           </div>
         </div>
       </div>
