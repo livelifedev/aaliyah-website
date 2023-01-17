@@ -68,9 +68,12 @@ export default function Contact() {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          setStatus("SUCCESS");
+          dispatch({ type: "reset" });
         },
         (err) => {
           console.log("FAILED...", err);
+          setStatus("ERROR");
         }
       );
   };
@@ -95,7 +98,18 @@ export default function Contact() {
             <p>Send a message or</p>
             <p>Book a complimentary call</p>
           </div>
+
           <div className={styles.section}>
+            {state.status == "SUCCESS" && (
+              <>
+                <p>Message Sent!</p>
+              </>
+            )}
+            {state.status == "ERROR" && (
+              <>
+                <p>Something went wrong. Please try again.</p>
+              </>
+            )}
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
