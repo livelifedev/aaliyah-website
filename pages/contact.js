@@ -1,7 +1,61 @@
+import { useReducer } from "react";
 import Head from "next/head";
 import styles from "../styles/Contact.module.css";
 
+const INITIAL_STATE = {
+  fullName: "",
+  email: "",
+  phone: "",
+  message: "",
+  contact: "",
+  status: "IDLE",
+};
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "updateFieldValue":
+      return { ...state, [action.field]: action.value };
+
+    case "updateStatus":
+      return { ...state, status: action.status };
+
+    case "reset":
+    default:
+      return INITIAL_STATE;
+  }
+};
+
 export default function Contact() {
+  const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
+
+  const updateFieldValue = (field) => (event) => {
+    dispatch({
+      type: "updateFieldValue",
+      field,
+      value: event.target.value,
+    });
+  };
+
+  const setStatus = (status) => dispatch({ type: "updateStatus", status });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setStatus("PENDING");
+
+    fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify(state),
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error(res.status);
+        setStatus("SUCCESS");
+      })
+      .catch((err) => {
+        console.error(err);
+        setStatus("ERROR");
+      });
+  };
+
   return (
     <>
       <Head>
@@ -23,32 +77,46 @@ export default function Contact() {
             <p>Book a complimentary call</p>
           </div>
           <div className={styles.section}>
-            <form action="mailto:aaliyah.r1990@gmail.com" method="GET">
+            <form onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="ENTER FULL NAME"
-                name="subject"
+                name="fullName"
                 required
+                value={state.fullName}
+                onChange={updateFieldValue("fullName")}
               />
               <input
-                type="email"
+                type="text"
                 placeholder="ENTER EMAIL"
                 name="email"
                 required
+                value={state.email}
+                onChange={updateFieldValue("email")}
               />
               <input
                 type="text"
                 placeholder="ENTER PHONE NUMBER"
                 name="phone"
                 required
+                value={state.phone}
+                onChange={updateFieldValue("phone")}
               />
               <input
                 type="text"
                 placeholder="PREFERRED CONTACT METHOD"
                 name="contact"
-                required
+                value={state.contact}
+                onChange={updateFieldValue("contact")}
               />
-              <textarea rows="8" placeholder="MESSAGE" name="body" required />
+              <textarea
+                rows="8"
+                placeholder="MESSAGE"
+                name="message"
+                required
+                value={state.message}
+                onChange={updateFieldValue("message")}
+              />
               <button type="submit">Submit</button>
             </form>
           </div>
