@@ -37,7 +37,7 @@ export default function Contact() {
     });
   };
 
-  console.log({ SERVICE_ID: process.env.SERVICE_ID });
+  console.log({ SERVICE_ID: process.env.NEXT_PUBLIC_SERVICE_ID });
 
   const setStatus = (status) => dispatch({ type: "updateStatus", status });
 
@@ -60,10 +60,10 @@ export default function Contact() {
 
     emailjs
       .send(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         state,
-        process.env.PUBLIC_KEY
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
       )
       .then(
         (response) => {
