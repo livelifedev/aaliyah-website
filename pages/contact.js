@@ -37,7 +37,7 @@ export default function Contact() {
     });
   };
 
-  console.log({ SERVICE_ID });
+  console.log({ SERVICE_ID: process.env.SERVICE_ID });
 
   const setStatus = (status) => dispatch({ type: "updateStatus", status });
 
