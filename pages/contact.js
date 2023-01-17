@@ -1,5 +1,6 @@
 import { useReducer } from "react";
 import Head from "next/head";
+import emailjs from "@emailjs/browser";
 import styles from "../styles/Contact.module.css";
 
 const INITIAL_STATE = {
@@ -36,24 +37,42 @@ export default function Contact() {
     });
   };
 
+  console.log({ SERVICE_ID });
+
   const setStatus = (status) => dispatch({ type: "updateStatus", status });
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setStatus("PENDING");
 
-    fetch("/api/email", {
-      method: "POST",
-      body: JSON.stringify(state),
-    })
-      .then((res) => {
-        if (!res.ok) throw new Error(res.status);
-        setStatus("SUCCESS");
-      })
-      .catch((err) => {
-        console.error(err);
-        setStatus("ERROR");
-      });
+    // fetch("/api/email", {
+    //   method: "POST",
+    //   body: JSON.stringify(state),
+    // })
+    //   .then((res) => {
+    //     if (!res.ok) throw new Error(res.status);
+    //     setStatus("SUCCESS");
+    //   })
+    //   .catch((err) => {
+    //     console.error(err);
+    //     setStatus("ERROR");
+    //   });
+
+    emailjs
+      .send(
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
+        state,
+        process.env.PUBLIC_KEY
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        }
+      );
   };
 
   return (
