@@ -52,7 +52,6 @@ export default function Contact() {
       )
       .then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
           setStatus("SUCCESS");
           dispatch({ type: "reset" });
         },
@@ -93,7 +92,10 @@ export default function Contact() {
             )}
             {state.status == "ERROR" && (
               <div className={styles.popup}>
-                <p>Something went wrong. Please try again.</p>
+                <p>
+                  Something went wrong. Please try again or email
+                  contact@aaliyahrubio.com
+                </p>
                 <button onClick={() => setStatus("IDLE")}>Back</button>
               </div>
             )}
