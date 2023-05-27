@@ -77,75 +77,79 @@ export default function Contact() {
       </Head>
 
       <div className={styles.wrapper}>
-        <div>
-          <div className={styles.title}>
+        {/* <div className={styles.title}>
             <h2>Let&apos;s Connect</h2>
             <p>Want to know more?</p>
             <p>Send a message or</p>
             <p>Book a complimentary call</p>
-          </div>
+          </div> */}
 
-          <div className={styles.section}>
-            {state.status == "SUCCESS" && (
-              <div className={styles.popup}>
-                <p>Message Sent!</p>
-                <button onClick={() => setStatus("IDLE")}>Back</button>
-              </div>
-            )}
-            {state.status == "ERROR" && (
-              <div className={styles.popup}>
-                <p>
-                  Something went wrong. Please try again or email
-                  contact@aaliyahrubio.com
-                </p>
-                <button onClick={() => setStatus("IDLE")}>Back</button>
-              </div>
-            )}
-            {state.status != "SUCCESS" && state.status != "ERROR" && (
-              <form onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  placeholder="ENTER FULL NAME"
-                  name="fullName"
-                  required
-                  value={state.fullName}
-                  onChange={updateFieldValue("fullName")}
-                />
-                <input
-                  type="text"
-                  placeholder="ENTER EMAIL"
-                  name="email"
-                  required
-                  value={state.email}
-                  onChange={updateFieldValue("email")}
-                />
-                <input
-                  type="text"
-                  placeholder="ENTER PHONE NUMBER"
-                  name="phone"
-                  required
-                  value={state.phone}
-                  onChange={updateFieldValue("phone")}
-                />
-                <input
-                  type="text"
-                  placeholder="PREFERRED CONTACT METHOD"
-                  name="contact"
-                  value={state.contact}
-                  onChange={updateFieldValue("contact")}
-                />
-                <textarea
-                  rows="8"
-                  placeholder="MESSAGE"
-                  name="message"
-                  required
-                  value={state.message}
-                  onChange={updateFieldValue("message")}
-                />
-                <button type="submit">Submit</button>
-              </form>
-            )}
-          </div>
+        <div className={styles.title}>
+          <h2>Connect With Me</h2>
+
+          <img src="/images/contact-me-profile.jpg" alt="" />
+        </div>
+
+        <div className={styles.section}>
+          {state.status == "SUCCESS" && (
+            <div className={styles.popup}>
+              <p>Message Sent!</p>
+              <button onClick={() => setStatus("IDLE")}>Back</button>
+            </div>
+          )}
+          {state.status == "ERROR" && (
+            <div className={styles.popup}>
+              <p>
+                Something went wrong. Please try again or email
+                contact@aaliyahrubio.com
+              </p>
+              <button onClick={() => setStatus("IDLE")}>Back</button>
+            </div>
+          )}
+          {state.status != "SUCCESS" && state.status != "ERROR" && (
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="ENTER FULL NAME"
+                name="fullName"
+                required
+                value={state.fullName}
+                onChange={updateFieldValue("fullName")}
+              />
+              <input
+                type="text"
+                placeholder="ENTER EMAIL"
+                name="email"
+                required
+                value={state.email}
+                onChange={updateFieldValue("email")}
+              />
+              <input
+                type="text"
+                placeholder="ENTER PHONE NUMBER"
+                name="phone"
+                required
+                value={state.phone}
+                onChange={updateFieldValue("phone")}
+              />
+              <input
+                type="text"
+                placeholder="PREFERRED CONTACT METHOD"
+                name="contact"
+                value={state.contact}
+                onChange={updateFieldValue("contact")}
+              />
+              <textarea
+                rows="8"
+                placeholder="MESSAGE"
+                name="message"
+                required
+                value={state.message}
+                onChange={updateFieldValue("message")}
+              />
+              <button type="submit">Submit</button>
+            </form>
+          )}
         </div>
       </div>
     </>
