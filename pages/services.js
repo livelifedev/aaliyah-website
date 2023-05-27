@@ -22,7 +22,7 @@ export default function Services() {
           </div>
           <div className={styles.section}>
             <div className={styles.title}>
-              <p>Become The Best Version You</p>
+              <p>Become The Best Version Of You</p>
             </div>
             <p className="bold">All services are currently online only</p>
             <ol>
@@ -50,7 +50,7 @@ export default function Services() {
             </p>
 
             <p>
-              Are you tires of the lingering pain of a heartbreak? <br />
+              Are you tired of the lingering pain of a heartbreak? <br />
               Does each day feel like an exhausting battle, leaving you drained
               and lacking the energy to move forward? <br />
               Do you find yourself holding back from opportunities because you

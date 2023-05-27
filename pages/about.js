@@ -27,8 +27,9 @@ export default function About() {
           </div>
           <div className={styles.section}>
             <p>
-              I&apos;m here to help you find your purpose and guide you to
-              create the life you are born to live.
+              I&apos;m here to help you overcome emotional pain, heal from
+              heartbreak and feelings of unworthiness, and rediscover the beauty
+              and joy in life.
             </p>
             <p>I get it I&apos;ve been there.</p>
             <p>
@@ -65,16 +66,14 @@ export default function About() {
               mentors, and alternative health practitioners around the world to
               learn new ways of healing and purifying the mind, body, and soul.
             </p>
-            <p>
-              And now I want to share them with you!
-              <br /> I can&apos;t end your suffering, or make your challenges
-              and problems disappear.
-            </p>
-
+            <p>And now I want to share them with you!</p>
             <p className={styles.marketCaption}>
-              I CAN teach you tools to overcome them.
-              <br /> I CAN empower you to let go of anything holding you back
-              from living the life you WANT AND DESERVE.
+              I CAN TEACH YOU THE TOOLS TO OVERCOME CHALLENGES AND EMOTIONAL
+              SUFFERING.
+            </p>
+            <p className={styles.marketCaption}>
+              I CAN EMPOWER YOU TO LET GO OF ANYTHING HOLDING YOU BACK FROM
+              LIVING THE LIFE YOU WANT AND DESERVE.
             </p>
           </div>
           <div>
