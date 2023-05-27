@@ -7,7 +7,11 @@ const breathing = localFont({
   src: "../fonts/Breathing.ttf",
 });
 const hammersmithOne = Hammersmith_One({ weight: "400", subsets: ["latin"] });
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
+const poppins = Poppins({
+  weight: "400",
+  style: ["italic", "normal"],
+  subsets: ["latin"],
+});
 
 export default function App({ Component, pageProps }) {
   return (

@@ -1,41 +1,54 @@
 .hero {
-  position: relative;
-  overflow: hidden;
-  aspect-ratio: 112/73;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 20px 10px;
+  gap: 20px;
 }
 
 .hero img {
-  width: 100%;
+  width: 30%;
+  min-width: 200px;
 }
 
 .heroCopy {
-  position: absolute;
-  top: 30%;
-  right: 8%;
   text-align: center;
 }
 
 .heroCopy h1 {
   font-size: 2rem;
-  margin-bottom: 4px;
+  margin-bottom: 20px;
   font-family: var(--primary-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.heroCopy p {
+.heroCopy h2 {
   font-size: 1rem;
   text-transform: uppercase;
-  max-width: 200px;
   font-family: var(--secondary-font);
+}
+
+.heroCopy p {
+  max-width: 600px;
+  margin: auto;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-family: var(--tertiary-font);
 }
 
 .marketCopy {
   font-size: 1.4rem;
-  text-transform: uppercase;
   text-align: center;
   padding: 32px 24px;
-  font-family: var(--secondary-font);
+  font-family: var(--tertiary-font);
+  font-style: italic;
+}
+
+.marketCopy p {
+  max-width: 400px;
+  margin: auto;
 }
 
 .missionWrapper {
@@ -51,83 +64,40 @@
 
 .missionSecondaryCopy {
   font-size: 1rem;
+  font-family: var(--tertiary-font);
+  text-transform: uppercase;
 }
 
 .missionLinkWrapper {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 1.2rem;
   font-family: var(--secondary-font);
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 360px) {
-  .heroCopy h1 {
-    font-size: 1.5rem;
-  }
+.missionLinkWrapper a {
+  display: inline-block;
+  padding: 12px 15px 10px;
+  background-color: var(--background-color);
 }
 
-@media only screen and (min-width: 420px) {
-  .heroCopy {
-    right: 6%;
-  }
-
-  .heroCopy h1 {
-    font-size: 2.5rem;
-  }
-
-  .heroCopy p {
-    max-width: unset;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  /* .heroCopy {
-    right: 20%;
-  } */
-
+/* @media only screen and (min-width: 800px) {
   .heroCopy h1 {
     font-size: 4rem;
   }
-
-  .heroCopy p {
-    font-size: 1.3rem;
-  }
-
-  .marketCopy {
-    font-size: 1.8rem;
-    padding: var(--copy-gutter);
-  }
-
-  .missionWrapper {
-    padding: var(--copy-gutter);
-  }
-
-  .missionLeadCopy {
-    font-size: 1.8rem;
-  }
-
-  .missionSecondaryCopy {
-    font-size: 1.2rem;
-  }
-
-  .missionLinkWrapper {
-    margin-top: var(--spacing-y);
-    margin-bottom: var(--spacing-y);
-    font-size: 1.5rem;
-  }
-}
+} */
 
 @media only screen and (min-width: 900px) {
-  .heroCopy {
-    /* right: 20%; */
+  .hero {
+    flex-direction: row;
   }
 
   .heroCopy h1 {
     font-size: 5rem;
   }
 
-  .heroCopy p {
+  .heroCopy h2 {
     font-size: 1.6rem;
   }
 
@@ -144,36 +114,6 @@
   }
 
   .missionLinkWrapper {
-    font-size: 1.8rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .heroCopy {
-    right: 18%;
-  }
-
-  .heroCopy h1 {
-    font-size: 6rem;
-  }
-
-  .heroCopy p {
-    font-size: 2rem;
-  }
-
-  .marketCopy {
-    font-size: 2.5rem;
-  }
-
-  .missionLeadCopy {
-    font-size: 2.5rem;
-  }
-
-  .missionSecondaryCopy {
-    font-size: 1.5rem;
-  }
-
-  .missionLinkWrapper {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }

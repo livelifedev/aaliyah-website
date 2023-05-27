@@ -1,11 +1,12 @@
 .nav {
   height: var(--nav-height);
   display: none;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-transform: uppercase;
   list-style: none;
   font-family: var(--secondary-font);
+  background-color: var(--secondary-color);
 }
 
 .nav a {
@@ -13,6 +14,9 @@
   padding: 0 4%;
   font-size: 1.2rem;
 }
+/* .nav a:first-child {
+  padding-left: 10px;
+} */
 
 .nav h1 {
   font-family: var(--primary-font);
@@ -27,15 +31,8 @@
   height: var(--nav-height);
 }
 
-/* .mobileNav h1 {
-  padding-top: 30px;
-  padding-left: 36px;
-  font-size: 1.2rem;
-  font-family: var(--primary-font);
-} */
-
 .navHome {
-  position: absolute;
+  /* position: absolute; */
   z-index: 1;
   width: 100%;
 }
@@ -48,13 +45,12 @@
 }
 .mobileLogo {
   position: absolute;
-  top: 18px;
+  top: 7px;
   left: 20px;
-  border-radius: var(--border-radius);
-  width: 145px;
+  width: 60px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .nav {
     display: flex;
   }

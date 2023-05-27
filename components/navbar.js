@@ -16,21 +16,14 @@ function Navbar() {
         <Link href="/">Home</Link>
         <Link href="/about">About Me</Link>
         <Link href="/services">Services</Link>
+        <Link href="/">Shop</Link>
         <Link href="/contact">Contact</Link>
-        {/* <h1 className={router.pathname === "/" ? "hidden" : null}>
-          Aaliyah Rubio
-        </h1> */}
-        <img
-          className={styles.logo}
-          src="/images/aaliyah-logo.jpg"
-          alt="Aaliyah Rubio"
-        />
       </nav>
 
       <div className={styles.mobileNav}>
         <img
           className={styles.mobileLogo}
-          src="/images/aaliyah-logo.jpg"
+          src="/images/aaliyah-logo.png"
           alt="Aaliyah Rubio"
         />
         <Menu right>
@@ -42,6 +35,9 @@ function Navbar() {
           </Link>
           <Link className="menu-item" href="/services">
             Services
+          </Link>
+          <Link className="menu-item" href="/">
+            Shop
           </Link>
           <Link className="menu-item" href="/contact">
             Contact

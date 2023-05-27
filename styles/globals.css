@@ -1,14 +1,15 @@
 :root {
   --spacing-y: 64px;
   --copy-gutter: var(--spacing-y) 11%;
-  --max-width: 859px;
+  --max-width: 1600px;
   --nav-height: 70px;
   --border-radius: 4px;
-  --primary-font: "Breathing", sans-serif;
-  --secondary-font: "Mont", sans-serif;
-  --tertiary-font: "Lovelo", sans-serif;
+  /* --primary-font: "Breathing", sans-serif; */
+  /* --secondary-font: "Mont", sans-serif;
+  --tertiary-font: "Lovelo", sans-serif; */
 
-  --text-color: #373a47;
+  /* --text-color: #373a47; */
+  --text-color: #333644;
   --background-color: #ffffff;
   --secondary-color: #eaeef7;
   --hover-color: #fa8072;

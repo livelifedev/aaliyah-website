@@ -40,26 +40,28 @@ export default function Contact() {
   const setStatus = (status) => dispatch({ type: "updateStatus", status });
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    setStatus("PENDING");
+    console.log("log", typeof event);
 
-    emailjs
-      .send(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
-        state,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY
-      )
-      .then(
-        (response) => {
-          setStatus("SUCCESS");
-          dispatch({ type: "reset" });
-        },
-        (err) => {
-          console.log("FAILED...", err);
-          setStatus("ERROR");
-        }
-      );
+    event.preventDefault();
+    // setStatus("PENDING");
+
+    // emailjs
+    //   .send(
+    //     process.env.NEXT_PUBLIC_SERVICE_ID,
+    //     process.env.NEXT_PUBLIC_TEMPLATE_ID,
+    //     state,
+    //     process.env.NEXT_PUBLIC_PUBLIC_KEY
+    //   )
+    //   .then(
+    //     (response) => {
+    //       setStatus("SUCCESS");
+    //       dispatch({ type: "reset" });
+    //     },
+    //     (err) => {
+    //       console.log("FAILED...", err);
+    //       setStatus("ERROR");
+    //     }
+    //   );
   };
 
   return (
