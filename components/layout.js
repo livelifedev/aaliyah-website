@@ -16,7 +16,7 @@ function Layout({ children }) {
         <nav>
           <Link href="/about">About Me</Link>
           <Link href="/services">Services</Link>
-          <Link href="/">Shop</Link>
+          <Link href="/shop">Shop</Link>
           <Link href="/contact">Contact</Link>
         </nav>
         <div>

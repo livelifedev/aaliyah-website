@@ -55,7 +55,7 @@ export default function Contact() {
       .then(
         (response) => {
           setStatus("SUCCESS");
-          dispatch({ type: "reset" });
+          // dispatch({ type: "reset" });
         },
         (err) => {
           console.log("FAILED...", err);
@@ -94,7 +94,7 @@ export default function Contact() {
           {state.status == "SUCCESS" && (
             <div className={styles.popup}>
               <p>Message Sent!</p>
-              <button onClick={() => setStatus("IDLE")}>Back</button>
+              <button onClick={() => dispatch({ type: "reset" })}>Back</button>
             </div>
           )}
           {state.status == "ERROR" && (
