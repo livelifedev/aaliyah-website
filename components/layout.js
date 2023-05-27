@@ -22,8 +22,11 @@ function Layout({ children }) {
         <div>
           <img src="/images/aaliyah-logo.png" alt="" width="100px" />
         </div>
-        <a href="" className={styles.instaLink}>
-          <BsInstagram />
+        <a
+          href="https://www.instagram.com/theaaliyahrubio/"
+          className={styles.instaLink}
+        >
+          <BsInstagram aria-label="Instagram" />
         </a>
       </footer>
     </div>
