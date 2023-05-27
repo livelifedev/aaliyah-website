@@ -18,7 +18,7 @@
 
 .heroCopy h1 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: var(--primary-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -55,6 +55,7 @@
   padding: 32px 24px;
   background-color: var(--secondary-color);
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .missionLeadCopy {
@@ -65,6 +66,9 @@
 .missionSecondaryCopy {
   font-size: 1rem;
   font-family: var(--tertiary-font);
+}
+
+.missionWrapper .missionSecondaryCopy {
   text-transform: uppercase;
 }
 
@@ -98,7 +102,7 @@
   }
 
   .heroCopy h2 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
   }
 
   .marketCopy {

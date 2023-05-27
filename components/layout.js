@@ -8,7 +8,7 @@ function Layout({ children }) {
     <div className={styles.layout}>
       <Navbar />
       <div className={styles.logoBar}>
-        <img src="/images/aaliyah-logo.png" alt="Aaliyah Rubio" width="100px" />
+        <img src="/images/aaliyah-logo.png" alt="" width="100px" />
       </div>
       <main className={styles.main}>{children}</main>
       {/* <Navbar /> */}
@@ -20,11 +20,7 @@ function Layout({ children }) {
           <Link href="/contact">Contact</Link>
         </nav>
         <div>
-          <img
-            src="/images/aaliyah-logo.png"
-            alt="Aaliyah Rubio"
-            width="100px"
-          />
+          <img src="/images/aaliyah-logo.png" alt="" width="100px" />
         </div>
         <a href="" className={styles.instaLink}>
           <BsInstagram />

@@ -1,6 +1,7 @@
 .wrapper {
   padding: var(--copy-gutter);
-  padding-top: 24px;
+  padding-top: 0;
+  padding-bottom: 20px;
 }
 
 .wrapper p {
@@ -16,7 +17,7 @@
   min-height: 400px;
   background-color: var(--secondary-color);
   padding: var(--copy-gutter);
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .title {
@@ -93,7 +94,7 @@
 @media only screen and (min-width: 600px) {
   .wrapper .missionLinkWrapper {
     margin-top: var(--spacing-y);
-    margin-bottom: var(--spacing-y);
+    /* margin-bottom: var(--spacing-y); */
     font-size: 1.5rem;
   }
 }
@@ -108,7 +109,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 32px;
-    margin-bottom: var(--spacing-y);
+    /* margin-bottom: var(--spacing-y); */
   }
 
   .wrapper p {

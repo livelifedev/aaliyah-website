@@ -1,6 +1,6 @@
 .wrapper {
   padding: var(--copy-gutter);
-  padding-top: 24px;
+  padding-top: 0;
 }
 
 .wrapper p {

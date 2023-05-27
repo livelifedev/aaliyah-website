@@ -1,6 +1,6 @@
 .wrapper {
-  padding: var(--copy-gutter);
-  padding-top: 24px;
+  /* padding: var(--copy-gutter); */
+  /* padding-top: 24px; */
 }
 
 .wrapper p {
@@ -17,7 +17,11 @@
   /* min-height: 400px; */
   background-color: var(--secondary-color);
   padding: var(--copy-gutter);
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
+}
+
+.section > * {
+  max-width: 680px;
 }
 
 .section li {
@@ -28,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  /* max-width: 300px; */
+  max-width: 320px;
   margin-top: 8px;
   margin-bottom: 32px;
 }
@@ -50,18 +54,19 @@
   padding-bottom: 56px;
 }
 
-.title {
-  margin-bottom: -40px;
-}
-
 .title h2 {
   font-size: 2.5rem;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  margin-left: 20px;
 }
 
-.title p {
-  padding-left: 4%;
+.section .title p {
+  /* padding-left: 4%; */
   font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .price {
@@ -79,6 +84,21 @@
   font-style: italic;
 }
 
+.missionLinkWrapper {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+
+.missionLinkWrapper a {
+  display: inline-block;
+  padding: 12px 15px 10px;
+  background-color: var(--background-color);
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 900px) {
   .wrapper {
   }
@@ -92,24 +112,15 @@
   }
 
   .section {
-    padding-top: 90px;
-    margin-bottom: var(--spacing-y);
+    margin-bottom: 20px;
   }
 
   .section li {
     font-size: 1.2rem;
   }
 
-  .title {
-    margin-bottom: -80px;
-  }
-
   .title h2 {
     font-size: 4rem;
-  }
-
-  .title p {
-    padding-left: 10%;
   }
 
   .price {
@@ -120,16 +131,16 @@
   }
 }
 
-.wrapper .missionLinkWrapper {
+/* .wrapper .missionLinkWrapper {
   text-align: center;
   margin-top: 32px;
   margin-bottom: 32px;
   font-size: 1.2rem;
   font-family: var(--secondary-font);
   text-transform: uppercase;
-}
+} */
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .wrapper .missionLinkWrapper {
     margin-top: var(--spacing-y);
     margin-bottom: var(--spacing-y);
@@ -147,4 +158,4 @@
   .wrapper .missionLinkWrapper {
     font-size: 2rem;
   }
-}
+} */

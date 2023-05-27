@@ -19,114 +19,58 @@ export default function Services() {
         <section>
           <div className={styles.title}>
             <h2>Are You Ready?</h2>
-            <p>Become The Best You</p>
           </div>
           <div className={styles.section}>
-            <p className="bold">
-              All services are one to one and currently online only
-            </p>
+            <div className={styles.title}>
+              <p>Become The Best Version You</p>
+            </div>
+            <p className="bold">All services are currently online only</p>
             <ol>
               <li>
                 <div>
                   <div>Initial Consultation</div>
                   <div>60-90 minutes</div>
                 </div>
-                <div className={styles.price}>$185</div>
+                <div className={styles.price}>$185aud</div>
               </li>
               <li>
                 <div>
                   <div>Subsequent Sessions</div>
                   <div>60 minutes</div>
                 </div>
-                <span className={styles.price}>$165</span>
+                <span className={styles.price}>$165aud</span>
               </li>
             </ol>
+
+            <div className={styles.title}>
+              <p>Packages and Programs</p>
+            </div>
+            <p className="bold">
+              Fees dependant on individual client&apos;s needs.
+            </p>
+
+            <p>
+              Are you tires of the lingering pain of a heartbreak? <br />
+              Does each day feel like an exhausting battle, leaving you drained
+              and lacking the energy to move forward? <br />
+              Do you find yourself holding back from opportunities because you
+              doubt your own worthiness?
+            </p>
+
+            <p>
+              If you&apos;re trapped in a cycle of emotional pain, longing to
+              overcome your past and reclaim your inner strength, then my
+              tailored package or program is exactly what you need. Through
+              compassionate guidance and dedicated suppport, I will help you
+              break free from the grips of suffering, ignite your inner
+              strength, and nurture a path of healing and growth.
+            </p>
+
+            <div className={styles.missionLinkWrapper}>
+              <Link href="/contact">Start your journey</Link>
+            </div>
           </div>
         </section>
-
-        <section>
-          <div className={styles.title}>
-            <h2>Align With Your</h2>
-            <p>True Potential</p>
-          </div>
-          <div className={styles.section}>
-            <h3>Programs</h3>
-            <p>
-              Each program is tailored specifically for the client and their
-              needs.
-            </p>
-            <p>Fees dependant on individual client&apos;s program</p>
-          </div>
-        </section>
-
-        <section className={styles.blockSection}>
-          <h3>Transform.</h3>
-          <div className={styles.section}>
-            <p className={styles.sectionLead}>
-              Break free from your old self and transform into who you are meant
-              to be...
-            </p>
-            <p>
-              The transform program is a powerful healing journey. During this
-              time, I will take you on a journey inward that will awaken you and
-              align you to your true potential. We will bring to surface any
-              past-traumas, fears, and self-limiting beliefs. We will then clear
-              these past beliefs and conditioning to heal any emotional/physical
-              wounds that prevent you from living your true potential.
-            </p>
-          </div>
-        </section>
-
-        <section className={styles.blockSection}>
-          <h3>Heal After Heartbreak.</h3>
-          <div className={styles.section}>
-            <p className={styles.sectionLead}>
-              Let go of heart break, disappointment, hopelessness, and
-              rediscover yourself…
-            </p>
-            <p>
-              Losing someone we really love is possibly one of the most painful
-              experiences we can go through. This program is to help you
-              rediscover who you are after experiencing a loss of a
-              relationship.
-            </p>
-            <p>
-              Throughout this healing journey you will learn to forgive, accept,
-              and let go of what you thought was meant to be. We will identify
-              your strengths and redirect your focus to meeting your needs,
-              enabling you to move forward and attracting the life you long for
-              and deserve.
-            </p>
-          </div>
-        </section>
-
-        <section className={styles.blockSection}>
-          <h3>Evolve.</h3>
-          <div className={styles.section}>
-            <p className={styles.sectionLead}>
-              Overcome a specific barrier that prevents you from success...
-            </p>
-            <p>
-              The Evolve coaching program is designed to shift your mindset and
-              build confidence in the decisions you make and the actions you
-              take.
-            </p>
-            <p>Are you struggling with a specific area in your life?</p>
-            <ul>
-              <li>Career or finding purpose</li>
-              <li>Stress Management</li>
-              <li>Developing new and positive habits</li>
-              <li>Communication</li>
-              <li>Confidence</li>
-            </ul>
-          </div>
-        </section>
-
-        <div>
-          <p className={styles.missionLinkWrapper}>
-            <Link href="/contact">Start your journey</Link>
-          </p>
-        </div>
       </div>
     </>
   );

@@ -8,7 +8,7 @@ const breathing = localFont({
 });
 const hammersmithOne = Hammersmith_One({ weight: "400", subsets: ["latin"] });
 const poppins = Poppins({
-  weight: "400",
+  weight: ["400", "600"],
   style: ["italic", "normal"],
   subsets: ["latin"],
 });

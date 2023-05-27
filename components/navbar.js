@@ -24,7 +24,7 @@ function Navbar() {
         <img
           className={styles.mobileLogo}
           src="/images/aaliyah-logo.png"
-          alt="Aaliyah Rubio"
+          alt=""
         />
         <Menu right>
           <Link className="menu-item" href="/">
