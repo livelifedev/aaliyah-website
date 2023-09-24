@@ -87,7 +87,7 @@ export default function Contact() {
         <div className={styles.title}>
           <h2>Connect With Me</h2>
 
-          <img src="/images/contact-me-profile.jpg" alt="" />
+          <img src="/images/contact-aaliyah.webp" alt="" />
         </div>
 
         <div className={styles.section}>
